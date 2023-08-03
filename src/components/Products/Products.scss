@@ -1,0 +1,90 @@
+.prod_item{
+    text-align: center;
+    position: relative;
+    max-width: 189px;
+    // margin: 0 10px 20px;
+    z-index: 1;
+    padding: 0 10px;
+    @media screen and (max-width: 575.98px) {
+        max-width: calc(50% - 20px);
+        // margin: 0 0px 20px;
+    }
+    &__link{
+        text-decoration: none;
+    }
+    &_img{
+        display: block;
+        margin: 0 auto;
+        padding: 15px 0;
+        overflow: hidden;
+        text-align: center;
+        max-width: 100%;
+        width: 100%;
+        height: 110px;
+        img{
+            object-fit: cover;
+            height: 100%;
+        }
+        @media screen and (max-width: 320px) {
+            
+        }
+        @media screen and (min-width: 1200px) {
+            width: 189px;
+            height: 189px;
+        }
+    }
+    &_name{
+        text-align: left;
+        margin-bottom: 0;
+        font-size: 13px;
+        height: 40px;
+        line-height: 1.2;
+        overflow: hidden;
+        padding: 5px 10px 0;
+        font-weight: 700;
+        color: #222;
+    }
+    &_price{
+        text-align: left;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: #db0000;
+        font-size: 12px;
+        font-family: 'Roboto Condensed',sans-serif;
+        font-weight: 300;
+    }
+    .prod_item-actions{
+        border: 1px solid #a1a1a1;
+        position: relative;
+        z-index: 3;
+        display: flex;
+        align-items: center;
+        a{
+            padding: .375rem .75rem;
+            position: relative;
+            z-index: 3;
+        }
+        .fa-pen,.fa-trash-can{
+            opacity: .4;
+            transition: all .8s ease;
+            &:hover{
+                opacity: 1;
+            }
+        }
+        .fa-pen{
+            color: blue;
+            
+        }
+        .fa-trash-can{
+            color: red;
+        }
+    }
+    // &:hover{
+    //     z-index: 1;
+    //     -webkit-box-shadow: 0 0 3px #a1a1a1;
+    //     -moz-box-shadow: 0 0 3px #a1a1a1;
+    //     -ms-box-shadow: 0 0 3px #a1a1a1;
+    //     -o-box-shadow: 0 0 3px #a1a1a1;
+    //     box-shadow: 0 0 3px #a1a1a1;
+    // }
+}

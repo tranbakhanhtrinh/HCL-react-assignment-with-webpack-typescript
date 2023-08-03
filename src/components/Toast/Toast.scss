@@ -1,0 +1,40 @@
+@import '../../common/styles/keyframes';
+
+.toast-container {
+    position: absolute;
+    right: 20px;
+    top: 120px;
+    z-index: 9999;
+    pointer-events: auto;
+}
+
+.custom-toast {
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    border: 1px solid;
+    margin-bottom: 10px;
+    color: #fff;
+    position: relative;
+    button{
+        position: absolute;
+        right: 0px;
+        top: -5px;
+        z-index: 10;
+        background: transparent;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+    }
+  }
+  
+  .custom-toast:last-child {
+    margin-bottom: 0;
+  }
+  
+  .toast--success {
+    background-color: green;
+  }
+  
+  .toast--error {
+    background-color: red;
+  }

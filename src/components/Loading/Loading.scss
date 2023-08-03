@@ -1,0 +1,40 @@
+@import '../../common/styles/keyframes';
+
+.lds-heart {
+	display: block;
+	position: relative;
+	width: 80px;
+	height: 80px;
+	transform: rotate(45deg);
+	transform-origin: 40px 40px;
+    margin: auto;
+	div {
+		top: 32px;
+		left: 32px;
+		position: absolute;
+		width: 32px;
+		height: 32px;
+		background: red;
+		animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+		&:after {
+			content: " ";
+			position: absolute;
+			display: block;
+			width: 32px;
+			height: 32px;
+			background: red;
+			top: -24px;
+			border-radius: 50% 50% 0 0;
+		}
+		&:before {
+			content: " ";
+			position: absolute;
+			display: block;
+			width: 32px;
+			height: 32px;
+			background: red;
+			left: -24px;
+			border-radius: 50% 0 0 50%;
+		}
+	}
+}
