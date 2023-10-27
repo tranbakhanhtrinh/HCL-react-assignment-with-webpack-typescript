@@ -12,7 +12,7 @@ import Dropdown from "components/Dropdown/Dropdown";
 
 const ProductsList = React.lazy(() => import("./ProductsList"));
 
-function ProductsPage() {
+function ProductsPage () {
     const [showModal, setShowModal] = useState<boolean>(false);
     const [productId, setProductId] = useState<number>(0);
     const [error, setError] = useState<string>("");
